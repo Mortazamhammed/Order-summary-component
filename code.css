@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Poppins:wght@200;400&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+.container{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 16px;
+}
+.card{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1rem 2rem;
+}
+.card .img-top img{
+    width: 100%;
+}
+.card .info{
+    padding: 30px;
+}
+.info h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.info  p{
+    line-height: 1.5;
+    color: #8a8a8a;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    background-color:#F8F9FE;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.box .music{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.music div{
+  margin-left: 20px;
+}
+.music div h2{
+    font-size: 16px;
+   color:hsl(223, 47%, 23%);
+   font-weight: 900;
+}
+.box a{
+  color: blue;
+}
+
+.info .button{
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 12px 80px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    border-radius: 8px;
+    font-size: 14px;
+   
+}
+
+.info span{
+    margin-top: 20px;
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+
+
+@media(max-width:425px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+
+  
+}
